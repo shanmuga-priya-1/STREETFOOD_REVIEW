@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community Reviews - Food Truck Reviews</title>
+  <style>
+    body {
+      background: #f8f9fa;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #f39c12;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    .reviews-container {
+      max-width: 700px;
+      width: 100%;
+      background: #fff;
+      border-radius: 10px;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .review {
+      border-bottom: 1px solid #eee;
+      padding: 1rem 0;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .review:last-child {
+      border-bottom: none;
+    }
+
+    .review p {
+      font-style: italic;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    .stars {
+      color: #f39c12;
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .reviewer {
+      font-weight: 600;
+      color: #222;
+      font-size: 1rem;
+      text-align: right;
+    }
+
+    /* Stagger animations */
+    .review:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    .review:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    .review:nth-child(3) {
+      animation-delay: 0.5s;
+    }
+    .review:nth-child(4) {
+      animation-delay: 0.7s;
+    }
+    .review:nth-child(5) {
+      animation-delay: 0.9s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Back button */
+    .back-btn {
+      margin: 2rem auto 0;
+      display: inline-block;
+      background: #f39c12;
+      color: #fff;
+      padding: 0.7rem 1.6rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #d87f0a;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Community Reviews</h1>
+
+  <div class="reviews-container">
+    <div class="review">
+      <p>“The Loaded Burger blew me away with its juicy flavors!”</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <div class="reviewer">— Jamie</div>
+    </div>
+    <div class="review">
+      <p>“Fresh Salad was so refreshing, perfect for summer!”</p>
+      <div class="stars">⭐⭐⭐⭐</div>
+      <div class="reviewer">— Alex</div>
+    </div>
+    <div class="review">
+      <p>“Tacos brought all the heat and flavor. Love it!”</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <div class="reviewer">— Priya</div>
+    </div>
+    <div class="review">
+      <p>“Amazing ingredients and great prices. I’ll be back for sure!”</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <div class="reviewer">— Carlos</div>
+    </div>
+    <div class="review">
+      <p>“Diverse flavors that satisfy every craving. Highly recommend!”</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <div class="reviewer">— Taylor</div>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-btn">← Back to Home</a>
+
+</body>
+</html>
